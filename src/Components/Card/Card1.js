@@ -25,12 +25,14 @@ const CardUser = (props) => {
     // let available = true;
     const [available, setavailable] = useState(false);
     // console.log({props});
-    let imgt=`imgr${props.ticket.priority.toString()}`;
+    // let imgt=`imgr${props.ticket.priority.toString()}`;
     // console.log(imgt);
     let dotuser;
     
     const [users, setusers] = useState([]);
     const [tick, setTick] = useState([]);
+    console.log(tick)
+    console.log(dotuser);
 
     useEffect(() => {
 

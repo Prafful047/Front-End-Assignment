@@ -9,9 +9,9 @@ import nopriorityimg from '../../assets/nopriority.png'
 
 const  Board=(props)=> {
     const [todono, settodono] = useState();
-    let usersdata = [''];
+    // let usersdata = [''];
     const [tick, setTick] = useState([{ "id": "CAM" }]);
-    const [todolist, settodolist] = useState([]);
+    // const [todolist, settodolist] = useState([]);
     const [inProgressno, setinProgressno] = useState(0);
     const [doneno, setdoneno] = useState(0);
     const [cancelled, setcancelled] = useState(0);
@@ -19,7 +19,7 @@ const  Board=(props)=> {
 
     // const [count, setCount] = useState(0);
     // let todonum = 0;
-    const [todonum, setTodonum] = useState(0);
+    // const [todonum, setTodonum] = useState(0);
 
     // const [first, setfirst] = useState(second)
 

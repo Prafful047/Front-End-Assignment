@@ -21,7 +21,7 @@ import usr7 from '../../assets/usr-7.png'
 
 const CardPriority = (props) => {
     const [available, setavailable] = useState(false);
-    let imgt=`imgr${props.ticket.priority.toString()}`;
+    // let imgt=`imgr${props.ticket.priority.toString()}`;
     let dotuser;
     
     const [users, setusers] = useState([]);

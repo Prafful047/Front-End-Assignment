@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Card.css';
-import logo from './logo.svg';
-import priority from './priority.svg';
+// import logo from './logo.svg';
+// import priority from './priority.svg';
 import tag from '../../assets/tag.png'
 import img0 from '../../assets/nopriority.png'
 import img4 from '../../assets/urgent.png'
@@ -33,6 +33,7 @@ const Card = (props) => {
     
     const [users, setusers] = useState([]);
     const [tick, setTick] = useState([]);
+    console.log(tick);
 
     useEffect(() => {
 

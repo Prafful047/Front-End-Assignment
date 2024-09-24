@@ -13,8 +13,8 @@ import CardPriority from '../../Components/Card/CardPriority.js'
 
 const Priority = (props) => {
     // let todono = 0;
-    const [todono, settodono] = useState();
-    let usersdata = [''];
+    // const [todono, settodono] = useState();
+    // let usersdata = [''];
     const [tick, setTick] = useState([{ "id": "CAM" }]);
     const [nopriority, setnopriority] = useState([]);
     const [lowpriority, setlowpriority] = useState([]);
@@ -25,15 +25,13 @@ const Priority = (props) => {
 
     // const [count, setCount] = useState(0);
     // let todonum = 0;
-    const [todonum, setTodonum] = useState(0);
+    // const [todonum, setTodonum] = useState(0);
 
     // const [first, setfirst] = useState(second)
 
     useEffect(() => {
 
         hello();
-        // count();
-
 
     }, []);
     useEffect(() => {

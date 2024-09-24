@@ -12,11 +12,11 @@ import CardStatus from '../../Components/Card/CardStatus.js'
 
 const Status = (props) => {
     // const navigate = useNavigate();
-    const [pref, setpref] = useState(localStorage.getItem('grouping'))
-    const [todono, settodono] = useState([]);
-    let usersdata = [''];
+    // const [pref, setpref] = useState(localStorage.getItem('grouping'))
+    // const [todono, settodono] = useState([]);
+    // let usersdata = [''];
     const [tick, setTick] = useState([]);
-    const [todolist, settodolist] = useState([]);
+    // const [todolist, settodolist] = useState([]);
     const [inProgressno, setinProgressno] = useState([]);
     const [doneno, setdoneno] = useState([]);
     const [cancelled, setcancelled] = useState([]);

@@ -18,14 +18,14 @@ import usr7 from '../../assets/usr-7.png'
 
 const Byuser = (props) => {
     // let todono = 0;
-    const [todono, settodono] = useState();
-    let usersdata = [''];
+    // const [todono, settodono] = useState();
+    // let usersdata = [''];
     let available=true;
     const [tick, setTick] = useState([{ "id": "CAM" }]);
     const [users, setusers] = useState([{ "id": "CAM" }])
   
     const [usermass, setusermass] = useState([]);
-    const [Order, setOrder] = useState(localStorage.getItem('order')); 
+    // const [Order, setOrder] = useState(localStorage.getItem('order')); 
 
     useEffect(() => {
 

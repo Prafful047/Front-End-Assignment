@@ -8,11 +8,11 @@ import img4 from '../../assets/urgent.png'
 import img3 from '../../assets/high.png'
 import img2 from '../../assets/medium.png'
 import img1 from '../../assets/low.png'
-import done from '../../assets/Done.png'
-import Cancelled from '../../assets/canceled.png'
-import backlogimg from '../../assets/backlog.png'
-import inprogressimg from '../../assets/in progress.png'
-import todo from '../../assets/to do.png'
+// import done from '../../assets/Done.png'
+// import Cancelled from '../../assets/canceled.png'
+// import backlogimg from '../../assets/backlog.png'
+// import inprogressimg from '../../assets/in progress.png'
+// import todo from '../../assets/to do.png'
 import usr1 from '../../assets/usr-1.png'
 import usr2 from '../../assets/usr-2.png'
 import usr3 from '../../assets/usr-3.png'
@@ -24,11 +24,12 @@ import usr7 from '../../assets/usr-7.png'
 
 const CardStatus = (props) => {
     const [available, setavailable] = useState(false);
-    let imgt=`imgr${props.ticket.priority.toString()}`;
+    // let imgt=`imgr${props.ticket.priority.toString()}`;
     let dotuser;
     
     const [users, setusers] = useState([]);
     const [tick, setTick] = useState([]);
+    console.log(tick);
 
     useEffect(() => {
 
@@ -57,14 +58,14 @@ const CardStatus = (props) => {
         3: img3,
         4: img4,
       };
-    const statusImageMap={
-        "Todo": todo,
-        "In progress":inprogressimg,
-        "Backlog":backlogimg,
-        "Done":done,
-        "Cancelled":Cancelled,
+    // const statusImageMap={
+    //     "Todo": todo,
+    //     "In progress":inprogressimg,
+    //     "Backlog":backlogimg,
+    //     "Done":done,
+    //     "Cancelled":Cancelled,
 
-    }
+    // }
     const usrImageMap = {
         "usr-1": usr1,
         "usr-2": usr2,
@@ -88,7 +89,8 @@ const CardStatus = (props) => {
       
       const usrImage=usrImageMap[props.ticket.userId]||usr1;
       const imgSrc = priorityImageMap[props.ticket.priority] || img0;
-      const statusImgSrc=statusImageMap[props.ticket.status]||todo;
+    //   const statusImgSrc=statusImageMap[props.ticket.status]||todo;
+
     if(available===true){
         dotuser=<div className='availableUser' />;
 
